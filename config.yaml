@@ -1,0 +1,47 @@
+baseURL: "https://doubleivan.ru/"
+author:
+  name: "Ivan Chernov, Ivan Elfimov"
+languageCode: "ru-ru"
+title: "Два Ивана"
+theme: "PaperMod"
+
+menu:
+  main:
+    - identifier: podcasts
+      name: Подкасты
+      url: /podcasts/
+      weight: 10
+    - identifier: archives
+      name: Архив
+      url: /archives/
+      weight: 20
+    - identifier: about
+      name: О нас
+      url: /about/
+      weight: 30
+
+params:
+  description: "Разработчики из Ostrovok.ru разговаривают про Python и IT"
+  homeInfoParams:
+    enabled: true
+    Title: "Два Ивана (название обсуждается)"
+    Content: "Разработчики из Ostrovok.ru разговаривают про Python и IT"
+  # profileMode:
+  #     enabled: true
+  #     title:  # optional default will be site title
+  #     subtitle: 
+  #     # imageUrl: "<image link>" # optional
+  #     # imageTitle: "<title of image as alt>" # optional
+  #     # imageWidth: 120 # custom size
+  #     # imageHeight: 120 # custom size
+  #     # buttons:
+  #     #     - name: Подкасты
+  #     #       url: "/podcasts"
+  #     #     - name: Github
+  #     #       url: "https://github.com/"
+
+  socialIcons:
+      - name: "rss"
+        url: "https://doubleivan.ru/podcasts/index.xml"
+      - name: "github"
+        url: "https://github.com/biozz/doubleivan.ru"
