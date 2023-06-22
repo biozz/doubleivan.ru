@@ -26,22 +26,9 @@ params:
     enabled: true
     Title: "Два Ивана (название обсуждается)"
     Content: "Разработчики из Ostrovok.ru разговаривают про Python и IT"
-  # profileMode:
-  #     enabled: true
-  #     title:  # optional default will be site title
-  #     subtitle: 
-  #     # imageUrl: "<image link>" # optional
-  #     # imageTitle: "<title of image as alt>" # optional
-  #     # imageWidth: 120 # custom size
-  #     # imageHeight: 120 # custom size
-  #     # buttons:
-  #     #     - name: Подкасты
-  #     #       url: "/podcasts"
-  #     #     - name: Github
-  #     #       url: "https://github.com/"
 
   socialIcons:
-      - name: "rss"
-        url: "https://doubleivan.ru/podcasts/index.xml"
-      - name: "github"
-        url: "https://github.com/biozz/doubleivan.ru"
+    - name: "rss"
+      url: "https://doubleivan.ru/podcasts/index.xml"
+    - name: "github"
+      url: "https://github.com/biozz/doubleivan.ru"
