@@ -13,7 +13,7 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>{{ if eq  .Title  site.Title }}{{ site.Title }}{{ else }}{{ with .Title }}{{ site.Title }} - {{.}}{{ end }}{{ end }}</title>
+    <title>{{ site.Params.title }}</title>
     <link>{{ .Permalink }}</link>
     <description />
     {{- with site.Params.images }}
@@ -23,12 +23,18 @@
       <link>{{ index . 0 | absURL }}</link>
     </image>
     {{- end }}
-    <generator>Hugo -- gohugo.io</generator>{{ with site.LanguageCode }}
-    <language>{{.}}</language>{{end}}{{ with site.Author.email }}
-    <managingEditor>{{.}}{{ with site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with site.Author.email }}
-    <webMaster>{{.}}{{ with site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with site.Copyright }}
-    <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
-    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    <generator>Hugo -- gohugo.io</generator>
+    <language>{{ site.LanguageCode }}</language>
+    {{ with site.Author.email }}
+        <managingEditor>{{.}}{{ with site.Author.name }} ({{.}}){{end}}</managingEditor>
+    {{end}}
+    {{ with site.Author.email }}
+        <webMaster>{{.}}{{ with site.Author.name }} ({{.}}){{end}}</webMaster>
+    {{end}}
+    <copyright>{{ site.Params.podcast_copyright }}</copyright>
+    {{ if not .Date.IsZero }}
+        <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{ end }}
     <itunes:category text="Technology" />
     <itunes:author>{{ site.Author.name }}</itunes:author>
     <itunes:subtitle>{{ site.Params.description }}</itunes:subtitle>
