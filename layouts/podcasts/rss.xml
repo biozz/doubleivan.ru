@@ -51,6 +51,11 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <itunes:image href="{{ .Site.BaseURL }}{{ .Params.image }}"/>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>{{ .Params.duration }}</itunes:duration>
+      <itunes:season>{{ .Params.season }}</itunes:season>
+      <itunes:episode>{{ .Params.episode }}</itunes:episode>
+	  <itunes:episodeType>full</itunes:episodeType>
       <author>{{ site.Author.name }}</author>
       <guid>{{ .Permalink }}</guid>
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
