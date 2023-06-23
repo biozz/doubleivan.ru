@@ -14,7 +14,7 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>{{ site.Params.title }}</title>
-    <link>{{ .Permalink }}</link>
+    <link>{{ site.BaseURL }}</link>
     <description />
     {{- with site.Params.images }}
     <image>
