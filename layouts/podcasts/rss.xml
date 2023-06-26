@@ -56,15 +56,14 @@
       <itunes:season>{{ .Params.season }}</itunes:season>
       <itunes:episode>{{ .Params.episode }}</itunes:episode>
 	  <itunes:episodeType>full</itunes:episodeType>
+	  <itunes:summary>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</itunes:summary>
       <author>{{ site.Author.name }}</author>
       <guid>{{ .Permalink }}</guid>
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if .Params.mp3 }}
       <enclosure url="{{ .Params.mp3 }}" length="{{ .Params.length }}" type="audio/mpeg"/>
       {{- end }}
-      {{- if site.Params.ShowFullTextinRSS }}
       <content:encoded>{{ (printf "<![CDATA[%s]]>" .Content) | safeHTML }}</content:encoded>
-      {{- end }}
     </item>
     {{- end }}
     {{ end }}
