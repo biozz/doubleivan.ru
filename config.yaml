@@ -34,3 +34,5 @@ params:
       url: "https://doubleivan.ru/podcasts/index.xml"
     - name: "github"
       url: "https://github.com/biozz/doubleivan.ru"
+    - name: "yandex_music"
+      url: "https://music.yandex.ru/album/26457076"
