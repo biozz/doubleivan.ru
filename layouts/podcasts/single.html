@@ -30,7 +30,7 @@
   {{- if .Content }}
   <div class="post-content">
     <figure>
-      <audio style="width: 100%;" controls preload="metadata">
+      <audio id="podcast" style="width: 100%;" controls preload="metadata">
         <source src="{{ .Params.mp3 }}" type="audio/mpeg">
       </audio>
     </figure>
@@ -38,6 +38,14 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
+
+    <ul>
+    {{ range .Params.timecodes }}
+      {{ $parts := split .title " "}}
+      <li><a href="#" class="timecode" style="font-family: monospace; font-size: 16px">{{ index $parts 0 }}</a> {{ (strings.TrimPrefix (index $parts 0) .title) | safeHTML }}</li>
+    {{ end}}
+    </ul>
+    
   </div>
   {{- end }}
 
