@@ -42,7 +42,7 @@
     <ul>
     {{ range .Params.timecodes }}
       {{ $parts := split .title " "}}
-      <li><a href="#" class="timecode" style="font-family: monospace; font-size: 16px">{{ index $parts 0 }}</a> {{ (strings.TrimPrefix (index $parts 0) .title) | safeHTML }}</li>
+      <li><span class="timecode">{{ index $parts 0 }}</span> {{ (strings.TrimPrefix (index $parts 0) .title) | safeHTML }}</li>
     {{ end}}
     </ul>
     
