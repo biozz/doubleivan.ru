@@ -39,13 +39,6 @@
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
 
-    <ul>
-    {{ range .Params.timecodes }}
-      {{ $parts := split .title " "}}
-      <li><span class="timecode">{{ index $parts 0 }}</span> {{ (strings.TrimPrefix (index $parts 0) .title) | safeHTML }}</li>
-    {{ end}}
-    </ul>
-    
   </div>
   {{- end }}
 
