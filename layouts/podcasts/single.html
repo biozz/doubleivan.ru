@@ -30,7 +30,7 @@
   {{- if .Content }}
   <div class="post-content">
     <figure>
-      <audio style="width: 100%;" controls preload="metadata">
+      <audio id="podcast" style="width: 100%;" controls preload="metadata">
         <source src="{{ .Params.mp3 }}" type="audio/mpeg">
       </audio>
     </figure>
@@ -38,6 +38,7 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
+
   </div>
   {{- end }}
 
