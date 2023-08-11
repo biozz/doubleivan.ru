@@ -1,7 +1,7 @@
 ---
 title: Два Ивана №12 Engineering Practices
 date: 2023-07-26T16:00:00+00:00
-summary: "Два Ивана обсуждают способы отладки приложений и рассказывают интересные истории отладки"
+summary: "Два Ивана обсуждают инженерные практики, которые применяют на ежедневной основе"
 image: "https://s3.doubleivan.ru/podcasts/2023_07_26_double_ivan_0012_engineering_practices.jpg"
 mp3: "https://s3.doubleivan.ru/podcasts/2023_07_26_double_ivan_0012_engineering_practices.mp3"
 length: 46845323
