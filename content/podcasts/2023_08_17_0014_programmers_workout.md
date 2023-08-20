@@ -37,3 +37,4 @@ timecodes:
 
 - [аддон для Excel для EVE Online](https://www.eveonline.com/news/view/information-is-power-excel-release)
 - [настольная игра М.А.Р.И. и безумная фабрика](https://nizagams.ru/product/mari/)
+- [как создавался Advent of Code](https://www.youtube.com/watch?v=CFWuwNDOnIo)
