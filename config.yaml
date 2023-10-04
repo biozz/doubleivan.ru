@@ -1,6 +1,7 @@
 baseURL: "https://doubleivan.ru/"
 author:
   name: "Ivan Chernov, Ivan Elfimov"
+  email: "ivan.elfimov@ostrovok.ru"
 languageCode: "ru-ru"
 title: "Два Ивана"
 theme: "PaperMod"
