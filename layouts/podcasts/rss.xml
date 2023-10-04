@@ -15,7 +15,8 @@
   <channel>
     <title>{{ site.Params.title }}</title>
     <link>{{ site.BaseURL }}</link>
-    <description />
+    <description>{{ site.Params.description}}</description>
+    <email>{{ site.Params.email }}</email>
     <image>
       <title>{{ site.Params.title }}</title>
       <url>{{ .Site.BaseURL }}logo.jpg</url>
