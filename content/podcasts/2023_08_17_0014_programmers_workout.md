@@ -2,7 +2,7 @@
 title: Два Ивана №14 Programmers Workout
 date: 2023-08-17T16:00:00+00:00
 summary: "Два Ивана разговаривают про тренажёры для программистов"
-image: "https://s3.doubleivan.ru/podcasts/2023_08_17_double_ivan_0014_programmers_workout.jpg"
+image: "https://s3.doubleivan.ru/podcasts/2023_08_17_double_ivan_0014_programmers_workout_ng.jpg"
 mp3: "https://s3.doubleivan.ru/podcasts/2023_08_17_double_ivan_0014_programmers_workout.mp3"
 length: 53242904
 season: 1

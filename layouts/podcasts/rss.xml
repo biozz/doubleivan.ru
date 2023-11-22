@@ -19,7 +19,7 @@
     <email>{{ site.Params.email }}</email>
     <image>
       <title>{{ site.Params.title }}</title>
-      <url>{{ .Site.BaseURL }}logo.jpg</url>
+      <url>{{ .Site.BaseURL }}logo_ng.jpg</url>
       <link>{{ site.BaseURL }}</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
@@ -36,7 +36,7 @@
     <itunes:author>{{ site.Author.name }}</itunes:author>
     <itunes:subtitle>{{ site.Params.description }}</itunes:subtitle>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="{{ .Site.BaseURL }}logo.jpg"/>
+    <itunes:image href="{{ .Site.BaseURL }}logo_ng.jpg"/>
     <itunes:keywords>python,it,russian</itunes:keywords>
     <itunes:summary>{{ site.Params.description }}</itunes:summary>
     <itunes:owner>
