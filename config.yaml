@@ -4,7 +4,7 @@ author:
   email: "ivan.elfimov@ostrovok.ru"
 languageCode: "ru-ru"
 title: "Два Ивана"
-theme: "PaperMod"
+theme: "DoubleIvan"
 
 menu:
   main:
@@ -12,14 +12,6 @@ menu:
       name: Подкасты
       url: /podcasts/
       weight: 10
-    - identifier: archives
-      name: Архив
-      url: /archives/
-      weight: 20
-    - identifier: about
-      name: О нас
-      url: /about/
-      weight: 30
 
 params:
   title: "Два Ивана (название обсуждается)"
