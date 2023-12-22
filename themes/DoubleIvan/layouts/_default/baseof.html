@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
-  <header>
+
+<body class="flex flex-col min-h-screen bg-zinc-100 max-w-screen-xl mx-auto">
+  <header class="p-4 text-lg font-bold">
     {{ partial "header.html" . }}
   </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
+    <main class="flex-1">
+      {{ block "main" . }}{{ end }}
+    </main>
   <footer>
     {{ partial "footer.html" . }}
   </footer>
 </body>
+
 </html>

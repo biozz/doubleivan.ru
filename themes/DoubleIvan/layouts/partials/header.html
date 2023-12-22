@@ -1,2 +1,10 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<nav>
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="/"><span class="text-xl font-semibold">{{ site.Title }}</span></a>
+        </div>
+        <div class="flex items-center">
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+        </div>
+    </div>
+</nav>
