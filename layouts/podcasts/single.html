@@ -1,7 +1,32 @@
 {{- define "main" }}
 
-
-
-
+<div class="grid grid-cols-6 gap-4">
+    <div class="col-span-2">
+        <img src="{{ .Params.image }}" class="rounded-2xl" />
+    </div>
+    <div class="col-span-4">
+        <h2>{{ .Params.summary }}</h2>
+        <h3>{{ .Date }}</h3>
+        <figure class="place-self-bottom">
+            <audio id="podcast" style="width: 100%;" controls preload="metadata">
+                <source src="{{ .Params.mp3 }}" type="audio/mpeg">
+            </audio>
+        </figure>
+    </div>
+    <div class="col-span-3">
+        {{ .Content }}
+    </div>
+    <div class="col-span-3">
+        Тут ссылки
+    </div>
+    <div class="col-span-6">
+        <h1>Таймкоды</h1>
+        <div class="grid grid-cols-3">
+            {{ range $.Page.Params.timecodes }}
+            <div><span class="timecode">{{ index .data 0 }}</span> {{ (index .data 1) | safeHTML }}</div>
+            {{ end}}
+        </div>
+    </div>
+</div>
 
 {{- end }}{{/* end main */}}
