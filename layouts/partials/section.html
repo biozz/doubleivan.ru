@@ -1,0 +1,14 @@
+{{ $title := .title }}
+{{ $section := .section }}
+
+<h1 class="text-zinc-800 text-5xl font-bold font-['Montserrat'] leading-10 pb-10 pt-10">Последние подкасты</h1>
+<div class="flex flex-row flex-wrap	gap-y-10">
+  {{ range (where .page.Site.RegularPages.ByDate.Reverse "Section" $section ) }}
+  <div class="basis-1/4 p-4 md:basis-1/3 sm:basis-1/2">
+    <a href="{{ .RelPermalink }}">
+      <img src="{{ .Params.image }}" class="rounded-2xl" />
+    </a>
+    <h2>{{ .Summary }}</h2>
+  </div>
+  {{ end }}
+</div>
