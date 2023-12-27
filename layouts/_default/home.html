@@ -1,31 +1,51 @@
 {{ define "main" }}
 
-<div class="flex flex-row flex-wrap	gap-y-5">
-    <div class="basis-2/3 max-w bg-green-500">
-        <h1>
-            Два Ивана (название обсуждается)
+<div class="flex flex-row gap-5">
+    <div class="basis-2/3 max-w  bg-emerald-500  rounded-2xl">
+        <h1 class="text-white text-6xl m-10 font-bold font-['Montserrat']">
+            Два Ивана<br />(название обсуждается)
         </h1>
-        <a href="/podcasts/">Начать</a>
+        <div class="w-48 h-14 px-8 py-4 bg-white rounded-2xl justify-center items-center gap-2.5 inline-flex ml-10">
+            <a href="/podcasts/">
+                <div class="w-32 text-center text-zinc-800 text-lg font-semibold font-['Montserrat'] leading-snug">
+                    Начать 🔥
+                </div>
+            </a>
+        </div>
     </div>
     <div class="basis-1/3 bg-blue-700 rounded-2xl">
         <img src="/20231227113448.png" />
     </div>
-    <div class="basis-1/4 bg-blue-700">
+</div>
+<div class="flex flex-row gap-5 pt-5">
+    <div class="w-96 h-96 bg-blue-700 rounded-2xl">
         <div class="flex flex-col">
-            <div><h2>Пришёл как-то Иван Чернов к Ивану Елфимов и сказал давай подкаст писать</h2></div>
+            <div class="m-5"><span class="text-white text-xl font-semibold font-['Montserrat'] leading-loose">Пришёл
+                    как-то раз </span><span
+                    class="text-white text-xl font-semibold font-['Montserrat'] underline leading-loose">Иван
+                    Елфимов</span><span class="text-white text-xl font-semibold font-['Montserrat'] leading-loose"> к
+                </span><span class="text-white text-xl font-semibold font-['Montserrat'] underline leading-loose">Иванy
+                    Чернову</span><span class="text-white text-xl font-semibold font-['Montserrat'] leading-loose"> и
+                    говорит: </span></div>
             <div><img src="/20231227114104.png" /></div>
         </div>
     </div>
-    <div class="basis-1/4 bg-green-500">
+    <div class="w-96 h-96 bg-emerald-500 rounded-2xl">
         <div class="flex flex-col">
-            <div class="w-256"><img src="/20231227114315.png" /></div>
-            <div><h2>Разработчики из Ostrovok.ru разговаривают про Python и IT</h2></div>
+            <div class="w-64 h-64 mx-auto"><img src="/20231227114315.png" /></div>
+            <div class="m-5 text-white text-xl font-semibold font-['Montserrat']">Разработчики из
+                Ostrovok.ru разговаривают про Python и IT</div>
         </div>
     </div>
     <div class="basis-1/2">
-        <div class="flex flex-col">
-            <div class="bg-blue-700">Тут будут соц сети</div>
-            <div class="bg-white"><h2>Слушать подкаст Два Ивана прямо сейчас</h2></div>
+        <div class="flex-col gap-5">
+            <div class="h-48 bg-blue-700 rounded-2xl pb-5">Тут будут соц сети</div>
+            <div class="h-48 bg-white flex-row">
+                <div class="w-80 text-zinc-800 text-3xl font-semibold font-['Montserrat'] leading-10">Cлушать подкаст Два Ивана<br/>прямо сейчас</div>
+                <div class="w-32 text-center text-zinc-800 text-lg font-semibold font-['Montserrat'] leading-snug">
+                    Начать 🔥
+                </div>
+            </div>
         </div>
     </div>
 </div>
