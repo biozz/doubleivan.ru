@@ -31,9 +31,7 @@ timecodes:
 
 Как прокачать свой программистский навык? Как научиться хачить задачки? И что же это за главное событие? Всё это в новом выпуске подкаста от двух Иванов!
 
-{{< timecodes >}}
-
-Сказали, но забыли:
+<!-- links -->
 
 - [аддон для Excel для EVE Online](https://www.eveonline.com/news/view/information-is-power-excel-release)
 - [настольная игра М.А.Р.И. и безумная фабрика](https://nizagams.ru/product/mari/)

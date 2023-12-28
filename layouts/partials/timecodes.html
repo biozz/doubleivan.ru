@@ -1,0 +1,15 @@
+{{/*
+Use this shortcode together with this page parameter:
+```yaml
+timecodes:
+- data: [00:00:00, Название обсуждается]
+- data: [00:01:47, Ставим точки]
+- data: [00:04:32, Самый простой способ дебажить]
+- data: [00:05:37, Отдельные скрипты]
+```
+*/}}
+{{ range $.Page.Params.timecodes }}
+<div><span class="timecode text-neutral-900text-neutral-900 text-lg font-semibold">{{ index .data 0 }}</span> <span
+    class="text-neutral-900 text-opacity-60 text-lg font-semibold leading-snug">{{ (index .data 1) |
+    safeHTML }}</span></div>
+{{ end}}

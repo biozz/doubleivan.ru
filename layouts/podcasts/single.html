@@ -1,30 +1,43 @@
 {{- define "main" }}
 
-<div class="grid grid-cols-6 gap-4">
-    <div class="col-span-2">
+<div class="grid grid-cols-6 gap-4 bg-gradient-to-b from-neutral-800 to-neutral-800 rounded-2xl">
+    <div class="col-span-2 p-5">
         <img src="{{ .Params.image }}" class="rounded-2xl" />
     </div>
     <div class="col-span-4">
-        <h2>{{ .Params.summary }}</h2>
-        <h3>{{ .Date }}</h3>
-        <figure class="place-self-bottom">
-            <audio id="podcast" style="width: 100%;" controls preload="metadata">
-                <source src="{{ .Params.mp3 }}" type="audio/mpeg">
-            </audio>
-        </figure>
+        <div class="grid min-h-full justify-items-bottom p-5">
+            <div class="text-stone-200 text-3xl font-bold font-['Montserrat'] leading-10">
+                {{ .Params.summary }}
+            <div class="text-white text-opacity-50 text-sm font-medium font-['Montserrat']">{{ .Date.Format "Jan 02, 2006" | safeHTML }}</div>
+
+            </div>
+            <div class="place-self-bottom">
+                <figure>
+                    <audio id="podcast" style="width: 100%;" controls preload="metadata">
+                        <source src="{{ .Params.mp3 }}" type="audio/mpeg">
+                    </audio>
+                </figure>
+            </div>
+        </div>
     </div>
-    <div class="col-span-3">
-        {{ .Content }}
+
+    {{ $cols := split .RawContent "<!-- links -->" }}
+    <div class="col-span-3 bg-emerald-500 rounded-2xl ml-5">
+        <div class="m-3 text-white text-2xl font-semibold font-['Montserrat']">
+            {{ index $cols 0 | markdownify }}
+        </div>
     </div>
-    <div class="col-span-3">
-        Тут ссылки
+
+    <div class="col-span-3 bg-blue-700 rounded-2xl mr-5">
+        <div class="m-3 text-white">
+            <h1 class="text-white text-2xl font-semibold font-['Montserrat']">Ссылки</h1>
+            {{ index $cols 1 | markdownify }}
+        </div>
     </div>
-    <div class="col-span-6">
-        <h1>Таймкоды</h1>
-        <div class="grid grid-cols-3">
-            {{ range $.Page.Params.timecodes }}
-            <div><span class="timecode">{{ index .data 0 }}</span> {{ (index .data 1) | safeHTML }}</div>
-            {{ end}}
+    <div class="col-span-6 ml-5 mr-5  bg-white rounded-2xl mb-5">
+        <h1 class="text-blue-700 text-2xl font-semibold font-['Montserrat'] leading-loose ml-5 mt-5">Таймкоды</h1>
+        <div class="grid grid-cols-3 ml-5 mb-5">
+            {{ partial "timecodes.html" . }}
         </div>
     </div>
 </div>
