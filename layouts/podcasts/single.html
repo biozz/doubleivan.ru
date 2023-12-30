@@ -1,66 +1,38 @@
 {{- define "main" }}
 
-<article class="post-single">
-  <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
-    <h1 class="post-title">
-      {{ .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h1>
-    {{- if .Description }}
-    <div class="post-description">
-      {{ .Description }}
+<div class="single__wrapper">
+  <div class="single__header">
+    <img src="{{ .Params.image }}" class="single__cover" />
+    <div class="single__title">
+      <h3 class="h3">{{ .Params.summary }}</h3>
+      <div class="single__time">
+        {{ .Date.Format "Jan 02, 2006" | safeHTML }}
+      </div>
     </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <div class="post-meta">
-      {{- partial "post_meta.html" . -}}
-      {{- partial "translation_list.html" . -}}
-      {{- partial "edit_post.html" . -}}
-      {{- partial "post_canonical.html" . -}}
+    <div class="single__player">
+      <figure style="width: 100%">
+        <audio id="podcast" style="width: 100%" controls preload="metadata">
+          <source src="{{ .Params.mp3 }}" type="audio/mpeg" />
+        </audio>
+      </figure>
     </div>
-    {{- end }}
-  </header>
-  {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
-  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
-  {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
-  {{- end }}
-
-  {{- if .Content }}
-  <div class="post-content">
-    <figure>
-      <audio id="podcast" style="width: 100%;" controls preload="metadata">
-        <source src="{{ .Params.mp3 }}" type="audio/mpeg">
-      </audio>
-    </figure>
-
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-
   </div>
-  {{- end }}
 
-  <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    <ul class="post-tags">
-      {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
-    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_icons.html" . -}}
-    {{- end }}
-  </footer>
+  {{ $cols := split .RawContent "<!-- links -->" }}
+  <div class="single__info">
+    <div class="block_green single__description">
+      <h4 class="h4">{{ index $cols 0 | markdownify }}</h4>
+    </div>
 
-  {{- if (.Param "comments") }}
-  {{- partial "comments.html" . }}
-  {{- end }}
-</article>
+    <div class="block_blue single__links">
+      <h4 class="h4">Ссылки</h4>
+      <div class="single__links-list">{{ index $cols 1 | markdownify }}</div>
+    </div>
+    <div class="block_white single__timecodes">
+      <h4 class="h4">Таймкоды</h4>
+      <div class="single__timecodes-list">{{ partial "timecodes.html" . }}</div>
+    </div>
+  </div>
+</div>
 
 {{- end }}{{/* end main */}}
-

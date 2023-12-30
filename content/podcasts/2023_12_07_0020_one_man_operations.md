@@ -36,5 +36,3 @@ timecodes:
 - [Sequoia дала денег pydantic](https://techcrunch.com/2023/02/16/sequoia-backs-open-source-data-validation-framework-pydantic-to-commercialize-with-cloud-services/)
 - [Astral, компания выросшая из Ruff](https://astral.sh/blog/announcing-astral-the-company-behind-ruff)
 
-{{< timecodes >}}
-
