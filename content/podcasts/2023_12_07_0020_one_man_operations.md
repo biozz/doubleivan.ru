@@ -29,6 +29,8 @@ timecodes:
 
 Вы когда-нибудь задумывались, как у некоторых авторов известных проектов получается всё успевать? Все ли авторы успешны? Как они на своих проектах зарабывают? В этом выпуске Два Ивана обсуждают несколько историй таких людей и пробуют ответить на эти вопросы.
 
+<!-- links -->
+
 - [Печальная история core-js](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md)
 - [~~UK правительство~~ Национальная система здравоохранения Германии и matrix](https://matrix.org/blog/2021/07/21/germany-s-national-healthcare-system-adopts-matrix/)
 - [Leftpad и npm](https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm)
