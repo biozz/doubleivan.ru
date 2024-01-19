@@ -1,5 +1,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
+
+<link rel="icon" href="{{ site.Params.assets.favicon | default "favicon-48x48 light.ico" | absURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.Params.assets.favicon16x16 | default "favicon-16x16 light.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.Params.assets.favicon32x32 | default "favicon-32x32 light.png" | absURL }}">
+<link rel="apple-touch-icon" href="{{ site.Params.assets.apple_touch_icon | default "apple-touch-icon-180x180 light.png" | absURL }}">
+
 <title>
   {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
   site.Title }}{{ end }}
