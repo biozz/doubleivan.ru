@@ -3,12 +3,17 @@
 <div class="podcasts-list podcasts-grid">
   {{ range (where .page.Site.RegularPages.ByDate.Reverse "Section" $section ) }}
   <a href="{{ .RelPermalink }}" class="podcasts-grid__item">
-    <div class="podcasts-grid__image"><img src="{{ .Params.image }}" /></div>
+    <div class="podcasts-grid__image">
+      <div class="podcasts-grid__duration">
+        {{ replaceRE `^[0:]*` "" .Params.duration }}
+      </div>
+      <img src="{{ .Params.image }}" />
+    </div>
     <div class="podcasts-grid__description-wrapper">
-      <div class="podcasts-grid__description">{{ .Params.summary }}</div>
       <div class="podcasts-grid__date">
         {{ time.Format "January 2, 2006" .Params.date }}
       </div>
+      <div class="podcasts-grid__description">{{ .Params.summary }}</div>
     </div>
   </a>
   {{ end }}
