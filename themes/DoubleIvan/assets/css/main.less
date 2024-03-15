@@ -417,17 +417,28 @@ a {
   border-radius: 20px;
   background-color: var(--white);
   overflow: hidden;
+  position: relative;
 
   @media @tablet {
     border-radius: 10px;
   }
 }
 
+.podcasts-grid__duration {
+  .text-xs();
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  color: var(--white);
+  padding: 4px 8px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
 .podcasts-grid__description-wrapper {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: space-between;
 }
 
 .podcasts-grid__description {
@@ -442,6 +453,7 @@ a {
 
 .podcasts-grid__date {
   .text-xs();
+  margin-top: 10px;
   opacity: 0.5;
 }
 
@@ -526,6 +538,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   @media @tablet {
     gap: 10px;
