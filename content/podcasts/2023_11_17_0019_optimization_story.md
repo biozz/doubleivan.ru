@@ -2,8 +2,10 @@
 title: Два Ивана №19 История одной оптимизации
 date: 2023-12-01T08:00:00+00:00
 summary: "У Двух Иванов в гостях Анна Богданова и вместе мы обсуждаем как оптимизировали одно API"
-image: "https://s3.doubleivan.ru/podcasts/2023_11_17_double_ivan_0019_optimization_story.jpg"
-mp3: "https://s3.doubleivan.ru/podcasts/2023_11_17_double_ivan_0019_optimization_story.mp3"
+# image: "https://s3.doubleivan.ru/podcasts/2023_11_17_double_ivan_0019_optimization_story.jpg"
+# mp3: "https://s3.doubleivan.ru/podcasts/2023_11_17_double_ivan_0019_optimization_story.mp3"
+image: "https://mavecloud.s3mts.ru/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/images/50db9497-8a6a-4dc8-a236-7e01eb4f2810.jpg"
+mp3: "https://api.mave.digital/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/episodes/50db9497-8a6a-4dc8-a236-7e01eb4f2810.mp3"
 length: 5245178
 season: 1
 episode: 19

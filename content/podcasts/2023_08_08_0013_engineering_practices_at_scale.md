@@ -2,8 +2,10 @@
 title: Два Ивана №13 Engineering Practices at Scale
 date: 2023-08-08T16:00:00+00:00
 summary: "Два Ивана расспрашивают Антона Огородникова, какие инженерные практики применяются в больших командах"
-image: "https://s3.doubleivan.ru/podcasts/2023_08_08_double_ivan_0013_engineering_practices_at_scale_ng.jpg"
-mp3: "https://s3.doubleivan.ru/podcasts/2023_08_08_double_ivan_0013_engineering_practices_at_scale.mp3"
+# image: "https://s3.doubleivan.ru/podcasts/2023_08_08_double_ivan_0013_engineering_practices_at_scale_ng.jpg"
+# mp3: "https://s3.doubleivan.ru/podcasts/2023_08_08_double_ivan_0013_engineering_practices_at_scale.mp3"
+image: "https://mavecloud.s3mts.ru/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/images/8aaf17e7-04b8-4ddc-8406-0d32d2c1c9e1.jpg"
+mp3: "https://api.mave.digital/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/episodes/8aaf17e7-04b8-4ddc-8406-0d32d2c1c9e1.mp3"
 length: 52223057
 season: 1
 episode: 13
