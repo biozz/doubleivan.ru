@@ -1,7 +1,4 @@
 baseURL: "https://doubleivan.ru/"
-author:
-  name: "Ivan Chernov, Ivan Elfimov"
-  email: "ivan.elfimov@ostrovok.ru"
 languageCode: "ru-ru"
 title: "Два Ивана"
 theme: "DoubleIvan"
@@ -14,6 +11,9 @@ menu:
       weight: 10
 
 params:
+  author:
+    name: "Ivan Chernov, Ivan Elfimov"
+    email: "ivan.elfimov@ostrovok.ru"
   title: "Два Ивана (название обсуждается)"
   description: "Разработчики из Ostrovok.ru разговаривают про Python и IT"
   podcast_copyright: "Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License."
