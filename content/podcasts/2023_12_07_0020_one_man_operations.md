@@ -2,8 +2,6 @@
 title: Два Ивана №20 Компании, репозитории и проекты, которые живут за счет одного человека
 date: 2023-12-22T08:00:00+00:00
 summary: "Два Ивана рассказывают жизненные истории из мира Open Source"
-# image: "https://s3.doubleivan.ru/podcasts/2023_12_07_double_ivan_0020_one_man_operations.jpg"
-# mp3: "https://s3.doubleivan.ru/podcasts/2023_12_07_double_ivan_0020_one_man_operations.mp3"
 image: "https://mavecloud.s3mts.ru/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/images/c66fda66-458c-499b-82cc-a50350c9a3de.jpg"
 mp3: "https://api.mave.digital/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/episodes/c66fda66-458c-499b-82cc-a50350c9a3de.mp3"
 length: 37449918

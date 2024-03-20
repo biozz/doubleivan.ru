@@ -2,8 +2,6 @@
 title: Два Ивана №18 Как там на другом материке?
 date: 2023-11-02T16:00:00+00:00
 summary: "Два Ивана позвали в гости известного в узких Островочных кругах разработчика и поговорили о переезде в США"
-# image: "https://s3.doubleivan.ru/podcasts/2023_11_02_double_ivan_0018_usa_relocation.jpg"
-# mp3: "https://s3.doubleivan.ru/podcasts/2023_11_02_double_ivan_0018_usa_relocation.mp3"
 image: "https://mavecloud.s3mts.ru/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/images/36080329-c1b9-4252-8efd-4677deffdc10.jpg"
 mp3: "https://api.mave.digital/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/episodes/36080329-c1b9-4252-8efd-4677deffdc10.mp3"
 length: 53585410
