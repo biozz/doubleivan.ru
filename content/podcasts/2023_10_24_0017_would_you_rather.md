@@ -2,8 +2,8 @@
 title: Два Ивана №17 Что бы вы выбрали
 date: 2023-10-24T16:00:00+00:00
 summary: "Два Ивана вместе с двумя гостями по очереди задают вопросы или-или, в которых выбор не так прост"
-image: "https://s3.doubleivan.ru/podcasts/2023_10_24_double_ivan_0017_would_you_rather.jpg"
-mp3: "https://s3.doubleivan.ru/podcasts/2023_10_24_double_ivan_0017_would_you_rather.mp3"
+image: "https://mavecloud.s3mts.ru/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/images/5527bf80-4b47-41f2-a838-7fd4ba9f4c41.jpg"
+mp3: "https://api.mave.digital/storage/podcasts/1af59247-7ac1-4d1c-b4f1-fd950f3daf15/episodes/5527bf80-4b47-41f2-a838-7fd4ba9f4c41.mp3"
 length: 48122222
 season: 1
 episode: 17
